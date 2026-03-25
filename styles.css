@@ -6,6 +6,7 @@ body {
 
 }
 
+
 header{
   display: flex;
   flex-direction: column;
@@ -36,6 +37,28 @@ header{
 /* ITEM */
 .item {
   text-align: center;
+}
+
+/*Código nuevo*/
+.img-menu {
+  transition: 0.3s;
+  cursor: pointer;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estado cuando está grande */
+.img-menu.activa {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 90vw;   /* 🔥 límite horizontal */
+  max-height: 90vh;  /* 🔥 límite vertical */
+  width: auto;
+  height: auto;
+  z-index: 1000;
+  border-radius: 10px;
 }
 
 /* IMÁGENES */
