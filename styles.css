@@ -39,6 +39,8 @@ header{
   text-align: center;
 }
 
+
+
 /*Código nuevo*/
 .img-menu {
   transition: 0.3s;
@@ -71,10 +73,9 @@ header{
 
 /* TEXTO */
 .item p {
-  margin-top: 10px;
+  margin-top: 3px;
   font-weight: bold;
 }
-
 
 /* Fondo oscuro */
 .overlay {
@@ -93,8 +94,13 @@ header{
   display: block;
 }
 
+p{
+  margin-bottom: 0;
+}
 
-
+.price-class{
+  font-size: 13px;
+}
 
 /* 📱 MÓVIL → CUADRADOS */
 @media (max-width: 768px) {
