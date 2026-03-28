@@ -97,7 +97,7 @@ header {
 }
 
 /* Nombre del platillo */
-.platillo .nombre {
+.platill  o .nombre {
   flex: 1; /* 👈 ocupa todo el espacio disponible */
   word-wrap: break-word; /* 👈 rompe texto largo */
 }
