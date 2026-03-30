@@ -9,6 +9,19 @@ const menus = {
     { nombre: "Omelette", precio: "$110" },
     { nombre: "Chilaquiles", precio: "$100" }
   ],
+  
+  huevos: [
+    { nombre: "Revueltos  (3) o  estrellados (2)", precio: "$140" },
+    { nombre: "Revueltos (2) con un ingrediente (50 grs) a escoger (jamón, salchicha, chorizo, espinaca con elote, rajas con elote o champiñón)", precio: "$155" },
+    { nombre: "Huevos (2) a la mexicana o huevos rancheros", precio: "$155" },
+    { nombre: "Huevos (2) Revueltos con tocino o huevos con machaca", precio: "$170" },
+    { nombre: "Omelette queso manchego", precio: "$155" },
+    { nombre: "Omelette queso manchego y UN INGREDIENTE (50 GRS) (jamón, salchicha, champiñón, chorizo o espinaca con elote)", precio: "$165" },
+
+    
+
+  ],
+
   hot_dog: [
     { nombre: "Hot dog sencillo", precio: "$45" },
     { nombre: "Hot dog hawaiano con queso manchego y piña.", precio: "$90" },
@@ -16,6 +29,21 @@ const menus = {
     { nombre: "Hot dog con peperoni y queso manchego", precio: "$110" },
     { nombre: "Hot dog con chorizo y queso manchego", precio: "$110" },
     { nombre: "Hot dog con champiñones y queso manchego", precio: "$110" },
+
+  ],
+
+  muy_mexicano: [
+    {nombre: "Chilaquiles rojos o verdes con pollo (60 GRS) o con  huevo(2) servidos  con frijoles refritos" , precio: "$155"},
+    {nombre: "Chilaquiles rojos o verdes  con carne asada (70 GRS)" , precio: "$180"},
+    {nombre: "Orden Quesadillas (3 piezas) con frijoles refritos, papas fritas y salsa" , precio: "$140"},
+    {nombre: "Orden Sincronizadas (3 piezas)  con frijoles refritos, papas fritas y salsa" , precio: "$155"},
+    {nombre: "Enchiladas rojas o verdes de pollo (3 piezas )(60 GRS) con frijoles, crema y lechuga" , precio: "$155"},
+    {nombre: "Enchiladas rojas o verdes de carne asada (3) Con frijol, crema, queso y lechuga" , precio: "$180"},
+    {nombre: "Orden Burritos de carne deshebrada (3 Pzas) (90 grs) con frijol y salsa" , precio: "$145"},
+    {nombre: "Orden de burritos de frijol y queso (3), incluye salsa" , precio: "$130"},
+    {nombre: "Molletes (2 piezas) Frijol y queso" , precio: "$115"},
+    {nombre: "Molletes (2 pzas) de rajas  con elotes, chorizo o champiñones (50 grs)" , precio: "$140"},
+    {nombre: "Molletes (2 piezas) Queso y carne asada (70 grs)" , precio: "$160"},
 
   ],
 
