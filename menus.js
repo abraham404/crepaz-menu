@@ -240,6 +240,13 @@ const menus = {
 
   ],
 
+    estimado_cliente: [
+    { nombre: "PARA  FACTURAR FAVOR DE ENVIARNOS UN CORREO A: facturacioncrepaz@gmail.com O WHATSAPP AL 612 16 14771 ENVIÁNDONOS UNA FOTOGRAFÍA DE SU TICKET, INDICAR SU FORMA DE PAGO, CONSTANCIA DE SITUACION FISCAL (PDF O JPG) Y EL USO DEL CFDI.", precio: "" },
+    { nombre: "SI REQUIERE CUENTAS SEPARADAS FAVOR DE INDICARLO ANTES DE ORDENAR.", precio: "" },
+    { nombre: "LA PROPINA ES VOLUNTARIA, NO ESTA INCLUIDA EN EL TOTAL DE SU CUENTA Y NO SE PUEDE FACTURAR.", precio: "" },
+    { nombre: "GRACIAS", precio: "" },
+  ],
+
 };
 
 export default menus;
