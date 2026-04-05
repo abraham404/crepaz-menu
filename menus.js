@@ -24,9 +24,8 @@ const menus = {
     { nombre: "Especiales crepa poblana pollo a la plancha, rajas con elote, crema y queso manchego", precio: "$150" },
     { nombre: "Especiales suprema queso manchego, salsa de tomate, peperoni, pimiento rojo, aceituna negra y champioñones.", precio: "$170" },
     { nombre: "Especiales del huerto queso manchego, champiñones, pimiento rojo y aceitunas negras", precio: "$150" },
-
-
   ],
+
   desayunos: [
     { nombre: "Hotcakes", precio: "$90" },
     { nombre: "Omelette", precio: "$110" },
@@ -281,7 +280,7 @@ combos: [
     { nombre: "Hot cakes (3 pzas) con una porción pequeña de fruta", precio: "$150" },
     { nombre: "Hot Cakes (3) con Jamón o salchicha (2). Mermelada, maple, mantequilla.", precio: "$150" },
     { nombre: "Sándwich de Jamón y Queso (pan blanco o integral)", precio: "$90" },
-    { nombre: "Sándwich de Pollo (50 grs) (pan blanco o integral) + $40 agrega papas fritas", precio: "$100" },
+    { nombre: "Sándwich de Pollo (50 grs) (pan blanco o integral) + $40 agrega papas fritas", precio: "$100" },
     { nombre: "Fruta Fresca (variedad de fruta de temporada)", precio: "$105" },
     { nombre: "Fruta con yogurt, Granola y miel de abeja", precio: "$115" },
   ],
