@@ -25,12 +25,6 @@ const menus = {
     { nombre: "Especiales suprema queso manchego, salsa de tomate, peperoni, pimiento rojo, aceituna negra y champioñones.", precio: "$170" },
     { nombre: "Especiales del huerto queso manchego, champiñones, pimiento rojo y aceitunas negras", precio: "$150" },
   ],
-
-  desayunos: [
-    { nombre: "Hotcakes", precio: "$90" },
-    { nombre: "Omelette", precio: "$110" },
-    { nombre: "Chilaquiles", precio: "$100" }
-  ],
   
     crepas_dulces: [
     { nombre: "Clasica azucar, mantequilla y canela", precio: "$90" },
