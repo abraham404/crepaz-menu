@@ -37,8 +37,9 @@ const menus = {
     { nombre: "Clasica azucar, mantequilla y canela", precio: "$90" },
     { nombre: "Clasica azucar, mantequilla y limon", precio: "$90" },
     { nombre: "Clasica cajeta o lechera maple ", precio: "$90" },
-    { nombre: "Clasica maple ", precio: "$85" },
+    { nombre: "Clasica maple", precio: "$85" },
     { nombre: "Clasica mermelada (fresa o zarzamora)", precio: "$90" },
+    { nombre: "Clasica Nutella", precio: "$100" },
     { nombre: "Combinadas cajeta y fresa", precio: "$120" },
     { nombre: "Combinadas cajeta y  platano", precio: "$120" },
     { nombre: "Combinadas cajeta y nuez", precio: "$120" },
@@ -69,23 +70,22 @@ const menus = {
     { nombre: "Combinadas crema de cacahuate y platano", precio: "$120" },
     { nombre: "Combinadas crema de cacahuate y nutella", precio: "$120" },
     { nombre: "Combinadas malvavisco y nutella", precio: "$120" },
-    { nombre: "Combinadas malvavisco y una fruta a elegir (fresa, platano,  mango o durazno en almibar)", precio: "$120" },
-    { nombre: "Especial de especial de frutas fresa ,platano y crema batida", precio: "$120" },
-    { nombre: "Especial de monje nutella y rompope", precio: "$120" },
-    { nombre: "Especial de baileys y azucar", precio: "$155" },
+    { nombre: "Especial de frutas fresa, platano y crema batida", precio: "$155" },
+    { nombre: "Especial de monje nutella y rompope", precio: "$125" },
+    { nombre: "Especial de baileys y azucar", precio: "$125" },
     { nombre: "Especial de kahlua, azucar glass y nieve de vainilla", precio: "$125" },
-    { nombre: "Especial de crepa light queso cottage, manzana fresca, nuez y miel de abeja", precio: "$125" },
-    { nombre: "Especial de tropical mango, piña fresca y lechera", precio: "$125" },
-    { nombre: "Especial de romeo y julieta nutella, platano y fresas", precio: "$150" },
-    { nombre: "Especial de primavera yogurt, platano, fresa, granola y crema batida", precio: "$150" },
-    { nombre: "Especial de fantasia nutella, fresas y piña fresca", precio: "$155" },
-    { nombre: "Especial de picasso manzana con canela, nuez, cajeta y nieve de vainilla.", precio: "$155" },
-    { nombre: "Especial de maria antonieta nutella, fresas, platano y bailey´s.", precio: "$150" },
+    { nombre: "Especial de crepa light queso cottage, manzana fresca, nuez y miel de abeja", precio: "$150" },
+    { nombre: "Especial de tropical mango, piña fresca y lechera", precio: "$150" },
+    { nombre: "Especial de romeo y julieta nutella, platano y fresas", precio: "$155" },
+    { nombre: "Especial de primavera yogurt, platano, fresa, granola y crema batida", precio: "$155" },
+    { nombre: "Especial de fantasia nutella, fresas y piña fresca", precio: "$150" },
+    { nombre: "Especial de picasso manzana con canela, nuez, cajeta y nieve de vainilla.", precio: "$155" }, // corregido
+    { nombre: "Especial de maria antonieta nutella, fresas, platano y bailey´s.", precio: "$160" }, // corregido
     { nombre: "Especial de dulce especial nutella, platano, nuez y nieve.", precio: "$155" },
-    { nombre: "Especial de very berries nutella, fresa, *frambuesa, *moras y crema batida.", precio: "$160" },
-    { nombre: "Especial de la deliciosa queso philadelphia, *mango, *frambuesa y *zarzamoras.", precio: "$155" },
-    { nombre: "Especial de dulce tentacion nutella, *mango, *zarzamora, *moras, crema batida y nieve (pregunte por sabores).", precio: "$170" },
-    { nombre: "Especial de paraiso  nutella, fresa, manzana verde y moras", precio: "$165" },
+    { nombre: "Especial de very berries nutella, fresa, *frambuesa, *moras y crema batida.", precio: "$170" }, // corregido
+    { nombre: "Especial de la deliciosa queso philadelphia, *mango, *frambuesa y *zarzamoras.", precio: "$165" }, // corregido
+    { nombre: "Especial de dulce tentacion nutella, *mango, *zarzamora, *moras, crema batida y nieve", precio: "$185" }, // corregido
+    { nombre: "Especial de paraiso nutella, fresa, manzana verde y moras", precio: "$165" },
     { nombre: "Especial de del chef queso philadelphia, nutella, fresas, moras y helado de vainilla.", precio: "$185" },
     { nombre: "Especial de capricho queso philadelphia, lechera, durazno en almibar y nuez.", precio: "$155" },
     { nombre: "Especial de sueño irlandes nutela, mazapan, baileys", precio: "$145" },
@@ -93,9 +93,6 @@ const menus = {
     { nombre: "Especial de tres deseos cajeta mazapan y kahlua.", precio: "$135" },
     { nombre: "Especial de majestad cajeta, nuez, kahlua y helado de vainilla.", precio: "$145" },
     { nombre: "Especial de canadiense mantequilla, maple y 2 tiras de tocino.", precio: "$135" },
-
-
-
   ],
 
   huevos: [
@@ -106,6 +103,7 @@ const menus = {
     { nombre: "Omelette queso manchego", precio: "$155" },
     { nombre: "Omelette queso manchego y UN INGREDIENTE (50 GRS) (jamón, salchicha, champiñón, chorizo o espinaca con elote)", precio: "$165" },
     { nombre: "Omelette poblana (Rajas con elote y queso manchego))", precio: "$165" },
+    { nombre: "Omelette (Guarnición (2) (frijoles, papas o chilaquiles Rojos o verdes), tortillas de maíz y salsa)", precio: "" },
 
   ],
 
@@ -113,9 +111,9 @@ const menus = {
     { nombre: "Hot dog sencillo", precio: "$45" },
     { nombre: "Hot dog hawaiano con queso manchego y piña.", precio: "$90" },
     { nombre: "Hot dog con carne asada, deshebrada o de pierna de cerdo.", precio: "$110" },
-    { nombre: "Hot dog con peperoni y queso manchego", precio: "$110" },
-    { nombre: "Hot dog con chorizo y queso manchego", precio: "$110" },
-    { nombre: "Hot dog con champiñones y queso manchego", precio: "$110" },
+    { nombre: "Hot dog con peperoni y queso manchego", precio: "$100" },
+    { nombre: "Hot dog con chorizo y queso manchego", precio: "$100" },
+    { nombre: "Hot dog con champiñones y queso manchego", precio: "$100" },
 
   ],
 
@@ -131,6 +129,7 @@ const menus = {
     {nombre: "Molletes (2 piezas) Frijol y queso" , precio: "$115"},
     {nombre: "Molletes (2 pzas) de rajas  con elotes, chorizo o champiñones (50 grs)" , precio: "$140"},
     {nombre: "Molletes (2 piezas) Queso y carne asada (70 grs)" , precio: "$160"},
+    {nombre: "Todos los molletes incluyen pico de gallo." , precio: ""},
 
   ],
 
@@ -175,12 +174,12 @@ const menus = {
     { nombre: "Frese", precio: "$85" },
     { nombre: "Plátano con chocolate", precio: "$85" },
     { nombre: "Fresa con chocolate", precio: "$85" },
+    { nombre: "Papaya", precio: "$185" },
     { nombre: "Moras (fresa, frambuesa, zarzamora)", precio: "$100" },
     { nombre: "Vaso con leche", precio: "$55" },
     { nombre: "Agregar avena 35 grs al licuar por", precio: "$13" },
     { nombre: "(Malteada) Fresa, Vainilla o Chocolate", precio: "$100" },
   ],
-
 
   hamburguesas_y_snacks: [
     { nombre: "Hamburguesa Clásica carne 90 grs + $40 agrega papas fritas", precio: "$115" },
@@ -240,9 +239,9 @@ combos: [
     { nombre: "Cappuccino Nutella", precio: "$90 / $100 / $110" },
     { nombre: "Moka", precio: "$80 / $90 / $100" },
     { nombre: "Latte Vainilla o Latte Caramelo", precio: "$80 / $90 / $100" },
-    { nombre: "Espresso Americano", precio: "$65" },
-    { nombre: "Latte", precio: "$75" },
-    { nombre: "Mocha o Latte Caramelo o Vainilla", precio: "$85" },
+    { nombre: "Café en las rocas espresso Americano", precio: "$65" },
+    { nombre: "Café en las rocas latte", precio: "$75" },
+    { nombre: "Café en las rocas mocha o Latte Caramelo o Vainilla", precio: "$85" },
 
   ],
   chocolate: [
@@ -261,7 +260,9 @@ combos: [
     { nombre: "Chicle (Bubble Gum)", precio: "$110" },
     { nombre: "Vainilla latte", precio: "$110" },
     { nombre: "Cookies and cream expresso", precio: "$110" },
+    { nombre: "Expresso", precio: "$110" },
     { nombre: "Choco-Menta", precio: "$110" },
+    { nombre: "Caramelo", precio: "$110" },
     { nombre: "Chocolate blanco", precio: "$110" },
     { nombre: "Mocha", precio: "$110" },
     { nombre: "Cereza", precio: "$110" },
@@ -269,14 +270,10 @@ combos: [
   ],
 
   smoothies: [
-    { nombre: "Fresa", precio: "$110" },
-    { nombre: "Mango", precio: "$110" },
-    { nombre: "Plátano", precio: "$110" },
-    { nombre: "Berries", precio: "$110" },
-    { nombre: "Chocolate blanco", precio: "$110" },
-    { nombre: "Mocha", precio: "$110" },
-    { nombre: "Cereza", precio: "$110" },
-
+    { nombre: "Fresa", precio: "$100" },
+    { nombre: "Mango", precio: "$100" },
+    { nombre: "Plátano", precio: "$100" },
+    { nombre: "Berries", precio: "$120" },
   ],
 
   hot_cakes: [

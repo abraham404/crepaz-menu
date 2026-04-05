@@ -14,6 +14,8 @@ images.forEach(img => {
 
     let html = `<h3>${tipo.toUpperCase()}</h3>`;
 
+    console.log(lista.length)
+
     lista.forEach(item => {
      html += `
       <div class="platillo">
