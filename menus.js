@@ -26,31 +26,36 @@ const menus = {
     { nombre: "Especiales del huerto queso manchego, champiñones, pimiento rojo y aceitunas negras", precio: "$150" },
   ],
   
-    crepas_dulces: [
+  crepas_dulces: [
+    /*Clasicas*/
     { nombre: "Clasica azucar, mantequilla y canela", precio: "$90" },
     { nombre: "Clasica azucar, mantequilla y limon", precio: "$90" },
     { nombre: "Clasica cajeta o lechera maple ", precio: "$90" },
     { nombre: "Clasica maple", precio: "$85" },
     { nombre: "Clasica mermelada (fresa o zarzamora)", precio: "$90" },
     { nombre: "Clasica Nutella", precio: "$100" },
+    /*Combinadas*/
     { nombre: "Combinadas cajeta y fresa", precio: "$120" },
     { nombre: "Combinadas cajeta y  platano", precio: "$120" },
     { nombre: "Combinadas cajeta y nuez", precio: "$120" },
     { nombre: "Combinadas cajeta y mango", precio: "$120" },
     { nombre: "Combinadas cajeta y durazno en almibar", precio: "$120" },
     { nombre: "Combinadas cajeta y nieve (fresa, vainilla o chocolate)", precio: "$120" },
+
     { nombre: "Combinadas lechera y platano", precio: "$120" },
     { nombre: "Combinadas lechera y fresa", precio: "$120" },
     { nombre: "Combinadas lechera y nuez", precio: "$120" },
     { nombre: "Combinadas lechera y mango", precio: "$120" },
     { nombre: "Combinadas lechera y durazno en almibar", precio: "$120" },
     { nombre: "Combinadas lechera y nieve (fresa, vainilla o chocolate)", precio: "$120" },
+
     { nombre: "Combinadas nutella y platano", precio: "$120" },
     { nombre: "Combinadas nutella y fresas", precio: "$120" },
     { nombre: "Combinadas nutella y nuez", precio: "$120" },
     { nombre: "Combinadas nutella y nieve (fresa, vainilla o chocolate)", precio: "$120" },
     { nombre: "Combinadas nutella y mango", precio: "$120" },
     { nombre: "Combinadas nutella y durazno  en almibar", precio: "$120" },
+
     { nombre: "Combinadas queso philadelphia y nutella", precio: "$120" },
     { nombre: "Combinadas queso philadelphia y fresa", precio: "$120" },
     { nombre: "Combinadas queso philadelphia y mango", precio: "$120" },
@@ -59,10 +64,15 @@ const menus = {
     { nombre: "Combinadas queso philadelphia y cajeta", precio: "$120" },
     { nombre: "Combinadas queso philadelphia y lechera", precio: "$120" },
     { nombre: "Combinadas queso philadelphia y mermelada (fresa o zarzamora)", precio: "$120" },
+
     { nombre: "Combinadas crema de cacahuate y mermelada (fresa o zarzamora)", precio: "$120" },
     { nombre: "Combinadas crema de cacahuate y platano", precio: "$120" },
     { nombre: "Combinadas crema de cacahuate y nutella", precio: "$120" },
+
     { nombre: "Combinadas malvavisco y nutella", precio: "$120" },
+    { nombre: "Combinadas malvavisco y una fruta a elegir (fresa, platano, mango o durazno en almibar)", precio: "$120" },
+
+    /*Especiales*/
     { nombre: "Especial de frutas fresa, platano y crema batida", precio: "$155" },
     { nombre: "Especial de monje nutella y rompope", precio: "$125" },
     { nombre: "Especial de baileys y azucar", precio: "$125" },
@@ -72,12 +82,12 @@ const menus = {
     { nombre: "Especial de romeo y julieta nutella, platano y fresas", precio: "$155" },
     { nombre: "Especial de primavera yogurt, platano, fresa, granola y crema batida", precio: "$155" },
     { nombre: "Especial de fantasia nutella, fresas y piña fresca", precio: "$150" },
-    { nombre: "Especial de picasso manzana con canela, nuez, cajeta y nieve de vainilla.", precio: "$155" }, // corregido
-    { nombre: "Especial de maria antonieta nutella, fresas, platano y bailey´s.", precio: "$160" }, // corregido
+    { nombre: "Especial de picasso manzana con canela, nuez, cajeta y nieve de vainilla.", precio: "$155" },
+    { nombre: "Especial de maria antonieta nutella, fresas, platano y bailey´s.", precio: "$160" },
     { nombre: "Especial de dulce especial nutella, platano, nuez y nieve.", precio: "$155" },
-    { nombre: "Especial de very berries nutella, fresa, *frambuesa, *moras y crema batida.", precio: "$170" }, // corregido
-    { nombre: "Especial de la deliciosa queso philadelphia, *mango, *frambuesa y *zarzamoras.", precio: "$165" }, // corregido
-    { nombre: "Especial de dulce tentacion nutella, *mango, *zarzamora, *moras, crema batida y nieve", precio: "$185" }, // corregido
+    { nombre: "Especial de very berries nutella, fresa, *frambuesa, *moras y crema batida.", precio: "$170" },
+    { nombre: "Especial de la deliciosa queso philadelphia, *mango, *frambuesa y *zarzamoras.", precio: "$165" },
+    { nombre: "Especial de dulce tentacion nutella, *mango, *zarzamora, *moras, crema batida y nieve", precio: "$185" },
     { nombre: "Especial de paraiso nutella, fresa, manzana verde y moras", precio: "$165" },
     { nombre: "Especial de del chef queso philadelphia, nutella, fresas, moras y helado de vainilla.", precio: "$185" },
     { nombre: "Especial de capricho queso philadelphia, lechera, durazno en almibar y nuez.", precio: "$155" },
@@ -86,7 +96,7 @@ const menus = {
     { nombre: "Especial de tres deseos cajeta mazapan y kahlua.", precio: "$135" },
     { nombre: "Especial de majestad cajeta, nuez, kahlua y helado de vainilla.", precio: "$145" },
     { nombre: "Especial de canadiense mantequilla, maple y 2 tiras de tocino.", precio: "$135" },
-  ],
+],
 
   huevos: [
     { nombre: "Revueltos  (3) o  estrellados (2)", precio: "$140" },
@@ -97,16 +107,19 @@ const menus = {
     { nombre: "Omelette queso manchego y UN INGREDIENTE (50 GRS) (jamón, salchicha, champiñón, chorizo o espinaca con elote)", precio: "$165" },
     { nombre: "Omelette poblana (Rajas con elote y queso manchego))", precio: "$165" },
     { nombre: "Omelette (Guarnición (2) (frijoles, papas o chilaquiles Rojos o verdes), tortillas de maíz y salsa)", precio: "" },
+    { nombre: "Nuestras creaciones no estan sujetas a cambios o sustitucion de ingredientes, usted puede crear su propia combinacion tomando una crepa base y agregar losingredientes extra que desee.", precio: "" },
 
   ],
 
   hot_dog: [
     { nombre: "Hot dog sencillo", precio: "$45" },
-    { nombre: "Hot dog hawaiano con queso manchego y piña.", precio: "$90" },
-    { nombre: "Hot dog con carne asada, deshebrada o de pierna de cerdo.", precio: "$110" },
-    { nombre: "Hot dog con peperoni y queso manchego", precio: "$100" },
-    { nombre: "Hot dog con chorizo y queso manchego", precio: "$100" },
-    { nombre: "Hot dog con champiñones y queso manchego", precio: "$100" },
+    { nombre: "Hot dog especial hawaiano con queso manchego y piña.", precio: "$90" },
+    { nombre: "Hot dog especial con carne asada, deshebrada o de pierna de cerdo.", precio: "$110" },
+    { nombre: "Hot dog especial con peperoni y queso manchego", precio: "$100" },
+    { nombre: "Hot dog especial con chorizo y queso manchego", precio: "$100" },
+    { nombre: "Hot dog especial con champiñones y queso manchego", precio: "$100" },
+    { nombre: "Todos los hot dogs llevan tomate, cebolla, salsa picante, mayonesa, mostaza y cátsup.", precio: "" },
+    { nombre: "Los hot dogs especiales incluyen 100 gr de papas fritas.", precio: "" },
 
   ],
 
