@@ -81,6 +81,8 @@ header {
   display: block;
 }
 
+
+
 .menu-expandido h3 {
   text-align: center;
   margin-bottom: 15px;
@@ -112,6 +114,21 @@ header {
   white-space: nowrap; /* 👈 evita que se baje */
   font-weight: bold;
 }
+
+
+/*Seleccionar platillo */
+.platillo {
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 7px 10px;
+}
+
+.platillo.seleccionado {
+  background-color: #F97316;
+  color: white;
+}
+
+/*----------------------*/
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

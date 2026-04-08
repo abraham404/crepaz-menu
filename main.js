@@ -9,12 +9,12 @@ images.forEach(img => {
 
     const tipo = img.dataset.menu;
     const lista = menus[tipo];
-
+    
     if (!lista) return;
 
     let html = `<h3>${tipo.toUpperCase()}</h3>`;
 
-    console.log(lista.lev)
+    
 
     lista.forEach(item => {
      html += `
@@ -23,9 +23,18 @@ images.forEach(img => {
         <div class="precio">${item.precio}</div>
       </div>
     `;
-    });
+    }); 
 
     menuExpandido.innerHTML = html;
+    
+    const platillos = document.querySelectorAll(".platillo");
+
+    platillos.forEach(p => {
+      p.addEventListener("click", () => {
+        p.classList.toggle("seleccionado");
+      });
+    });
+    
     menuExpandido.classList.add("activo");
     overlay.classList.add("activo");
   });
