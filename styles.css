@@ -130,6 +130,27 @@ header {
 
 /*----------------------*/
 
+.contador {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contador button {
+  background-color: #22C55E;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cantidad {
+  min-width: 20px;
+  text-align: center;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .menu-food, .menu-drinks {
