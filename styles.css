@@ -64,7 +64,7 @@ header {
   width: 90%;
   max-width: 400px;
 
-  height: 35vh;        /* 👈 IMPORTANTE (altura fija) */
+  height: 50vh;        /* 👈 IMPORTANTE (altura fija) */
   max-height: 80vh;
 
   background: white;
@@ -148,6 +148,37 @@ header {
 .cantidad {
   min-width: 20px;
   text-align: center;
+}
+
+
+.platillo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nombre {
+  flex: 1;
+}
+
+.derecha {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.precio {
+  font-weight: bold;
+  min-width: 60px;
+  text-align: right;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 
